@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://react-devshop.netlify.app",
     methods: "GET, PUT, PATCH, POST, DELETE",
     credentials: true,
   })
@@ -441,6 +441,5 @@ app.get("/api/category/:category_url", (req, res) => {
   })
 })
 
-
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3001
 app.listen(port)
